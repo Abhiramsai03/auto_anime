@@ -132,8 +132,8 @@ def download_with_ffmpeg(post, output_path):
 
 def post_video_to_twitter(video_path, tweet_text):
     hashtags = (
-        "#anime #manga #animeart #otaku #animegirl #animelover #animeedit #animeedits"
-        "#animememes #animedrawing #animeworld #animefan #animecosplay"
+        "#anime #manga #animeart #otaku #animegirl #animelover #animeedit #animeedits "
+        "#animememes #animedrawing #animeworld #animefan #animecosplay "
         "#fanart #animes #animeboy #animegirls #animelove #animefans #animememe"
     )
     formatted_tweet = f"{tweet_text}\n\n{hashtags}"

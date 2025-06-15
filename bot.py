@@ -43,7 +43,14 @@ api_v1 = tweepy.API(auth)
 POSTED_POSTS_FILE = "posted_posts.txt"
 
 # We only want these subreddits
-SUBREDDITS = ["fightporn"]
+SUBREDDITS = [
+    "goodanimemes",
+    "Animemes",
+    "anime",
+    "araragi",
+    "anime_best_moments",
+    "AnimeMeme"
+]
 
 # =========================
 # 2) HELPER FUNCTIONS
@@ -125,10 +132,9 @@ def download_with_ffmpeg(post, output_path):
 
 def post_video_to_twitter(video_path, tweet_text):
     hashtags = (
-        "#fightsvideos #fightvideos #fightingvideos #knockout #ko "
-        "#shegotbeatup #Fights #fightvids #fightpage #fighting "
-        "#FightVideo #fightsvideo #hoodfight #hoodfights #boyfight "
-        "#girlfights #gore #death #schoolfights #hoodfights #fight #fights"
+        "#anime #manga #animeart #otaku #animegirl #animelover #animeedit #animeedits"
+        "#animememes #animedrawing #animeworld #animefan #animecosplay"
+        "#fanart #animes #animeboy #animegirls #animelove #animefans #animememe"
     )
     formatted_tweet = f"{tweet_text}\n\n{hashtags}"
     print("Uploading video chunked to Twitter…")
